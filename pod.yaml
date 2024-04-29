@@ -1,0 +1,13 @@
+pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kibria-nginx-pod
+  labels:
+    app: nginx 
+    tire: frontend
+    type: webserver
+spec:
+  containers:
+    - name: nginx
+      image: nginx
